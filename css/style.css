@@ -1,0 +1,199 @@
+/* MAIN CODE THAT IS SHARED */
+body{
+    background-color: rgb(26, 26, 26) !important; 
+}
+/* NAV BAR */
+nav a {
+    font-size: 1.5em;
+}
+
+nav ul li a:hover {
+    text-decoration: 5px overline rgb(65, 65, 65);
+}
+
+nav ul li a#active {
+    border-bottom: 5px solid rgb(65, 65, 65);
+}
+
+nav li {
+    margin: 0 1em;
+}
+.name {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color:aliceblue;
+    font-size: 1.5em;
+}
+/* JUMBOTRON */
+.jumbotron-home{
+    background: url('../picture/meButBig.jpeg') no-repeat fixed;
+    width: 100%;
+}
+.jumbotron-myPast{
+    background: url('../picture/rgtsPhoto.jpeg') no-repeat fixed;
+}
+.jumbotron-polyLife{
+    background: url('../picture/table.jpg') no-repeat fixed;
+}
+.jumbotron-myCourse{
+    background: url('../picture/dismPeople.jpeg') no-repeat fixed;
+}
+.jumbotron{
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.1);
+    height: 100vh;
+    background-size: cover ;
+    background-position: center;
+}
+.jumbotron-feedback{
+    background: url('../picture/feedbackjumbotron.jpeg') no-repeat fixed;
+}
+div#main {
+    height: 100vh;
+    background-color: rgb(52, 51, 51, 0.42);
+    float: left;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+div#firstDiv {
+    width:100%;
+    font-family: "Perpetua Titling MT";
+    font-size: 3.5em;
+    margin-top: 20%;
+}
+
+div.twoDiv {
+    width:100%;
+    font-family: 'Heiti SC', Helvetica;
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+/* MAIN CSS FOR ALL FILES */
+.text {
+    color: white;
+    font-family: Helvetica;
+    font-size: 1em;
+    padding: 0.75em;
+
+}
+
+
+/* SLIDER */
+.carousel-item {
+    height: 32rem;
+    background: black;
+    color: white;
+  background-position: center;
+  background-size: cover; 
+}
+
+
+.colorfulText{
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%,rgb(141, 72, 252) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer{
+    font-family: Helvetica;
+    color:aliceblue;
+    background-color: rgba(56, 49, 49, 0.445);
+}
+
+footer ol li {
+    font-family: Helvetica;
+    list-style: "- ";
+}
+
+footer ol li a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+    word-wrap: break-word;
+    
+}
+
+footer ol li a:hover {
+    text-decoration: underline;
+    color: rgb(56, 126, 206)
+}
+
+#invis{
+    visibility: hidden !important;
+}
+
+.quote {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    color: #0000008a;
+    text-shadow: 2px 2px rgba(153, 153, 153, 0.377);
+}
+
+
+.thankYou {
+
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 0.5em;
+    font-style: normal;
+    text-align: center;
+}
+
+
+form ol li{
+    list-style: none;
+}
+
+form{
+    background-color: #D8D8D8;
+    border-radius: 10px;
+}
+
+
+.submitButton input:hover {
+    background-color: #979797;
+    cursor: pointer;
+}
+input[type="range"]{
+    width:90%;
+}
+
+
+div#countdown-jae{
+    background-color: #D8D8D8 !important;
+    border-radius: 20px;
+}
+
+
+
+.deadline {
+  display: flex;
+}
+.deadline-format {
+  background: var(--clr-grey-1);
+  color: var(--clr-white);
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+.deadline h4:not(.expired) {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: var(--spacing);
+}
+
+.deadline div{
+    background-color: #979797;
+}

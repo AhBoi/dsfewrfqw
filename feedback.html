@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.js"></script>
+        <title>Jovis' Portfolio</title>
+        <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon"> 
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="name">JOVIS CHAN</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="myPast.html">My Past</a></li>
+                    <li class="nav-item"><a class="nav-link" href="polyLife.html">Poly Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="myCourse.html">My Course</a></li>
+                    <li class="nav-item"><a class="nav-link" id="active" href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            
+        </nav>    
+    </header>
+    <!-- Welcome Page -->
+    <div class="jumbotron jumbotron-feedback contaner-fluid p-0">
+        <div class="row">
+            <div id="main" class="col-lg-4 col-md-6 col-sm-12">
+                <div id="firstDiv">
+                    <div class="thankYou">
+                        <div>Thank you for reading my portfolio!</div>
+                        <div>Please leave a feedback, as this portfolio is still a work in progress, and any form of help would be amazing! </div>
+                    </div>
+                </div>
+                <div class="quote shadow-lg p-3 mb-5 bg-body rounded">
+                    <div>“Feedback is a gift. Ideas are the currency of our next success. Let people see you value both feedback and ideas.”</div>
+                    <div>― Jim Trinka and Les Wallace</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COUNT DOWN -->
+    <div class="container p-5 mt-5" id="countdown-jae">
+        <div class="section-center row" >
+            <p class="h1 col-md-6 col-sm-12 p-0">Let's count down to JAE together:</p>
+            <div class="col-md-6 col-sm-12 p-2">
+                <h4 class="giveaway mx-auto">JAE Starts on Tuesday, 11 January 2022 15:00 hours</h4>
+                <div class="deadline container-fluid">
+                    <div class="deadline-format col">
+                    <div>
+                        <h4 class="days">157</h4>
+                        <span>days</span>
+                    </div>
+                    </div>
+                    <div class="deadline-format col">
+                    <div>
+                        <h4 class="hours">16</h4>
+                        <span>hours</span>
+                    </div>
+                    </div>
+                    <div class="deadline-format col">
+                    <div>
+                        <h4 class="minutes">43</h4>
+                        <span>mins</span>
+                    </div>
+                    </div>
+                    <div class="deadline-format col">
+                    <div>
+                        <h4 class="seconds">11</h4>
+                        <span>secs</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Everything from here is feedback -->
+        <form class="container p-5 m-5 mx-auto">
+            <ol>
+                <li><label for="name">Name: </label>
+                    <input type="text" class="form-control form-control-lg" id="name" name="name" required /></li>
+                <li><label for="email" >Email: </label>
+                    <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="name@example.com"></li>
+                <li >
+                    <label for='selectionbox'><strong>Please rate your overall experience: </strong></label><br>
+                    <div class="row" id="feedback-slider">
+                        <strong class="col-1 ">0</strong>
+                        <input class="col" name='slider' id='selectionbox' type='range' value='0' step='1' min='0' max='10' />
+                        <strong class="col-1">10</strong>
+                    </div>
+                    
+                </li>
+                <li><div class="userRate">
+                    <div id="rate"><strong>How satisfied are you with the experience with the website</strong></div>
+                    <div class="rate">
+                        <input type="radio" id="rate1" name="rate" value="1"/>
+                        <label for="rate1">Very Satisfied</label>
+                        <input type="radio" id="rate2" name="rate" value="2"/>
+                        <label for="rate2">Satisfied</label>
+                        <input type="radio" id="rate3" name="rate" value="3"/>
+                        <label for="rate3">Unsatisfied</label>
+                        <input type="radio" id="rate4" name="rate" value="4"/>
+                        <label for="rate4">Very Unsatisfied</label>
+                    
+                    </div>
+                    </div></li>
+                    <li><label for="phone">Contact Number: </label>
+                        <input type="number" class="form-control form-control-lg" id="phone" name="phone"/></li>
+                    <li><label for="feedback">Feedback: </label>
+                        <input type="text" class="form-control form-control-lg" id="feedback" name="feedback"/></li>
+                    <li><label for="questions">Any Questions:  </label>
+                        <input type="text" class="form-control form-control-lg" id="questions" name="questions"/></li>
+                    <li><label for="date">Your Date of Birth: </label>
+                        <input type="date" class="form-control form-control-lg" id="date" name="date"/></li>
+                    <li>
+                        <label for="findOut">How did you find out about this website?</label>
+                        <select class="form-control form-control-lg " id="findOut" name="cchoice">
+                            <option>Please select an option</option>
+                            <option>Instagram</option>
+                            <option>Facebook</option>
+                            <option>Singapore Poly website</option>
+                            <option>Word of mouth</option>
+                        </select>
+                    </li>
+                    <li><div class="form-check">
+                        <p>Please check the box below to continue:</p>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Allow us to send you updates on events and ongoings in Singapore Poly and the course Diploma in Infocomm Security Management.
+                        </label>
+                      </div></li>
+            </ol>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-outline-dark btn-lg" value="submit">Submit</button>
+            </div>
+        </form>
+    <!-- FOOTER -->
+    <footer id="container-fluid">
+        <div class="p-3 row">
+            <div class="col-md-3 col-sm-12">
+                <h4>Contact Me:</h4>
+                <ol class="social">
+                    <li><a href="mailto:JOVISC.21@ichat.sp.edu.sg">Email: JOVISC.21@ichat.sp.edu.sg</a></li>
+                    <li><a href="https://www.instagram.com/jvschn/?hl=en">Instagram: @JvsChn</a></li>
+                    <li><a href="https://t.me/JvsChn">Telegram: @JvsChn</a></li>
+                </ol>
+            </div>
+            <div  class="col-md-3 col-sm-12">
+                <h4>References:</h4>
+                <ol>
+                    <li><a href="https://www.youtube.com/watch?v=F0FkpgNtyt0">Owl Slider</a></li>
+                    <li><a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/infocomm-security-management/overview">Diploma in Infocomm Security Management</a></li>
+                    <li><a href="http://www.streetdirectory.com.my/stock_images/travel/preview/15893368710058/131857/teck_whye_primary_school/">Teck Whye Primary School Picture</a></li>
+                    <li><a href="https://www.sp.edu.sg/soc">Singapore Polytechnic School of Computing</a></li>
+                </ol>
+            </div>
+            <div  class="col-md-3 col-sm-12">
+                <h4 id="invis">invisible</h4>
+                <ol class="last">
+                    <li><a href="https://github.com/john-smilga/javascript-basic-projects/tree/master/12-countdown-timer/final">Countdown GitHub</a></li>
+                    <li><a href="http://sp-dism.blogspot.com/2013/01/dism-logo.html">DISM Logo</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/File:Singapore_Polytechnic_logo.png">Singapore Polytechnic Logo</a></li>
+                </ol>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h4>Created and designed by:</h4>
+                <ol><li>Jovis Chan(P2128735)</li></ol>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
